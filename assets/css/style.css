@@ -126,7 +126,8 @@ textarea {
     height: 50px;
   }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px)
+and (min-width: 639px){
    
     #masthead {
         width: 100%;
@@ -147,14 +148,27 @@ textarea {
         margin: 30% 0 40px;
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (min-width: 641px)
+    and (max-width: 768px)
+{
 
         #name {
             color: burlywood;
             float: left;
+            font-size: 15px;
+            line-height: 49px;
+            padding-right: 192px;
+        }
+    }
+
+    @media screen and (min-width:769px)
+    and (min-width: 980px) {
+        #name{
+            color: burlywood;
+            float: left;
             font-size: 20px;
             line-height: 49px;
-            padding-right: 0px;
+            padding-right: 192px;
         }
     }
 }
