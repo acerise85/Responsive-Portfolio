@@ -2,86 +2,55 @@
 <html>
 <head>
     <title>Contact</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
    
     
 </head>
-<header >    
-    <div class="container">
-
-        <!---Navigation Bar at top of page---> 
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:saddlebrown ">
-            
-            <!---First row of page in navigation bar-->
-            <div class="row">
-                <div class="col-sm-1">
-                    <!----Name Link that leads to home index page-->
-                    <a class="navbar-brand" href="index.html" id="name">Aimes Cerise</a>
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <!---Links to aout, contact, and portfolio pages-->
-                <div class="col-sm-2"></div>
-                <div class="collapse navbar-collapse" id="navbarText">
-                  <span class="navbar-text">
-                        <ul class="navbar-nav mr-auto">
-                            <div class="col-sm-3">
-                                <!--Link to About Page-->
-                                <li class="nav-item">
-                                  <a class="nav-link" class="Contacts" href="index.html">About <span class="sr-only">(current)</span></a>
-                                </li>
-                                </div>
-                                <div class="col-sm-3">
-                                    <!---Link to Contact page-->
-                                <li class="nav-item">
-                                  <a class="nav-link" class="Contacts" href="contact.html">Contact</a>
-                                </li>
-                                </div>
-                                <div class="col-sm-3">
-                                    <!----Link to Portfolio page-->
-                                <li class="nav-item">
-                                  <a class="nav-link" class="Contacts" href="portfolio.html">Portfolio</a>
-                                </li>
-                                </div>
-                        </ul>
-                </span>
-            </div>
+<header id="masthead">
+    <!---Page Header and n=Navigation Bar-->
+        <div class="container">
+          <a href="index.html" id="name">Aimes Cerise</a>
+          <!----Nave Bar Style-->
+          <nav style="background-color: saddlebrown;
+          padding: 1%;
+          border: white;
+          border-width: thin;
+          border-style: solid;">   
+            <!------Links to About, Contact, and Portfolio Pages-->
+            <a href="index.html" class="Contacts">About</a>
+            <a href="portfolio.html" class="Contacts">Portfolio</a>
+            <a href="contact.html" class="Contacts" >Contact</a>
+          </nav>
         </div>
-        </nav>  
-    </div>      
-</header>
+      </header>
     <!------Contact Form-->
 <div id="main-container" class="container">
     <section id="section">
         <h1>Contact</h1>
         <form>
-            <!----Name Input Field-->
-            <div class="form-group">
-                <label for="formGroupExampleInput">Name</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
-            </div>
-            <!---Email Input Field-->
-        <div class="form-group">
-            <label for="formGroupExampleInput2">Email</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
-        </div>
-        <!---Messages Input-->
-        <div class="form-group">
-            <div class="row">
-                <textarea  id="message" name="message" required="required"></textarea>
-                <input type="submit">
-            </div>
-        </div>
+           <ul>
+               <li>
+                   <label>Name</label>
+                   <input type="email" placeholder="Billy Bob">
+               </li>
+               <li>
+                    <label>Email</label>
+                    <input type="email" placeholder="youremail@gmail.com">
+               </li>
+               <li>
+                   <label>Meassage</label>
+                   <textarea id="message"></textarea>
+               </li>
+           </ul>
         </form>
     </section>
 </div> 
-<footer>
-    <div class="container">
-        Copyright &copy; 
-      </div>
+    <footer>
+        <div class="container">
+            Copyright &copy; 
+          </div>
     </footer>
 </body>
 

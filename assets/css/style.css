@@ -1,26 +1,10 @@
 
-/* Section container */
+/* body  container */
 .container{
     width: 960px;
     margin: 0 auto;
 }
 
-
-h1,
-h2,
-h3,
-p {
-  margin-bottom: 20px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
-  color: burlywood;
-  background-color: saddlebrown;
-}
-
-h2,
-h3 {
-  font-size: 22px;
-} 
 
 /* Main body style */
 body{
@@ -76,21 +60,34 @@ body{
 }
 
 /*Contact Page */
-textarea {
-    height: 35px;
-    padding: 0 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-  }
-textarea {
+
+#message{
+
     height: 200px;
-    width: 100%;
-    
-  }
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+  
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
   
   input[type=submit] {
     padding: 10px 30px;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     cursor: pointer;
     background: burlywood;
@@ -104,9 +101,18 @@ textarea {
     padding: 3%;
   }
 
-  #pics{
-    margin: 3%;
+  .pics{
+    position: relative;
+    padding: 10px;
+    float: left;
+    width: 200px;
+    margin: 25px 20px;
   }
+
+  h4 {
+      position: absolute;
+      width: 100%;
+}
 
   footer{
     padding: 30px 0;
@@ -120,3 +126,35 @@ textarea {
     height: 50px;
   }
 
+@media screen and (max-width: 640px){
+   
+    #masthead {
+        width: 100%;
+        position: fixed;
+        top:0;
+        z-index: 9999;
+    }
+
+    footer {
+        width: 100%;
+        position: fixed;
+        bottom:0;
+        z-index: 9999;
+    }
+
+    #section {
+
+        margin: 30% 0 40px;
+    }
+
+    @media screen and (max-width: 768px){
+
+        #name {
+            color: burlywood;
+            float: left;
+            font-size: 20px;
+            line-height: 49px;
+            padding-right: 0px;
+        }
+    }
+}
